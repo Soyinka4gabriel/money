@@ -1,0 +1,52 @@
+MDScreen:
+    name: "login"
+    MDFloatLayout:
+        Image:
+            source: "money.png"
+            pos_hint: {"center_x": .5,"center_y": .8}
+            size_hint: .4, .4
+        MDBoxLayout:
+            line_color: 0,0,1,1
+            size_hint: 0.8, None
+            height: dp(280)
+            radius: dp(24)
+            pos_hint: {"center_x": .5,"center_y": .48}
+            padding:dp(20)
+            spacing: dp(15)
+            
+            MDFloatLayout:
+                orientation: 'vertical'
+                adaptive_height: True
+                MDLabel:
+                    adaptive_height: True
+                    text: "Login"
+                    font_size: "30sp"
+                    pos_hint: {"center_x":0.45,"center_y": 2.3}
+                    #pos: 20,20
+                MDTextFieldRound:
+                    adaptive_height: True
+                    id: Username
+                    hint_text: "Username"
+                    icon_right: "account"
+                    pos_hint: {'center_x': 0.5,'center_y': 1.8}
+                MDTextFieldRound:
+                    adaptive_height: True
+                    id: password
+                    hint_text: "Password"
+                    icon_right: "eye"
+                    password: True
+                    pos_hint: {'center_x': 0.5,'center_y': 1.4}
+                MDTextButton:
+                    text: "Forgot Password?"
+                    pos_hint: {'center_x': .85,'center_y': 1.2}
+                    font_size: dp(10)
+                MDFillRoundFlatButton:
+                    text: "Login"
+                    pos_hint: {'center_x': 0.5,'center_y': .9}
+                    size_hint: .6,.4
+                    #on_release: app.dash()
+                    on_press: app.dash()
+                
+                MDTextButton:
+                    text: "Register/Unlock Device"
+                    pos_hint: {'center_x': 0.5,'center_y': 0.5}
