@@ -1,0 +1,107 @@
+MDScreen:
+    name: "check"
+    MDFloatLayout:
+        canvas:
+            Color:
+                rgb:  0x33 / 255.0, 0x99 / 255.0, 0x66/255.0
+            Rectangle:
+                size: self.size
+        MDIconButton:
+            icon: "chevron-left"
+            md_bg_color: 0x33 / 255.0, 0x99 / 255.0, 0x66/255.0
+            user_font_size: "35sp"
+            pos_hint: {"center_y": .95}
+            on_press: app.login()
+
+        MDLabel:
+            text: "Back"
+            pos_hint: {"center_x": .2,"center_y": .949}
+            halign: "center"
+            theme_text_color: "Custom"
+            text_color: 1,1,1,1
+            font_size: "18sp"
+        MDIconButton:
+            icon: "bell"
+            md_bg_color: 0x33 / 255.0, 0x99 / 255.0, 0x66/255.0
+            user_font_size: "28sp"
+            pos_hint: {"center_x": .9, "center_y": .95}
+            on_press: app.login()
+      
+        
+        ScrollView:
+            pos_hint:{"center_y":.42}
+            MDGridLayout:
+                adaptive_height: True
+                size_hint_y: None
+                height: self.minimum_height
+                width: self.minimum_width
+                cols: 1
+                padding: dp(20)
+                spacing: dp(20)
+                MDCard:
+                    md_bg_color: 1,1,1,1
+                    size_hint: 1, None
+                    height: dp(260)
+                    radius: [24,]
+                    Image:
+                        source: "aio.png"   
+                    MDLabel:
+                        text: "utegifcye eiuwfgciuyke ukyaewvfukycwe eweyufacgvkyfvac uyewiafvc wae weaifydcv weaewac waefycvawefc aewcdv"
+                        halign: "center"
+                        theme_text_color: "Custom"
+                        text_color: 0x33 / 255.0, 0x99 / 255.0, 0x66/255.0, 1
+                        font_size: "18sp"
+                MDCard:
+                    md_bg_color: 1,1,1,1
+                    size_hint: 1, None
+                    height: dp(260)
+                    radius: [24,]
+                    Image:
+                        source: "d.png"   
+                    MDLabel:
+                        text: "utegifcye eiuwfgciuyke ukyaewvfukycwe eweyufacgvkyfvac uyewiafvc wae weaifydcv weaewac waefycvawefc aewcdv"
+                        halign: "center"
+                        theme_text_color: "Custom"
+                        text_color: 0x33 / 255.0, 0x99 / 255.0, 0x66/255.0, 1
+                        font_size: "18sp"
+                MDCard:
+                    md_bg_color: 1,1,1,1
+                    size_hint: 1, None
+                    height: dp(260)
+                    radius: [24,]
+                    Image:
+                        source: "sg.png"   
+                    MDLabel:
+                        text: "utegifcye eiuwfgciuyke ukyaewvfukycwe eweyufacgvkyfvac uyewiafvc wae weaifydcv weaewac waefycvawefc aewcdv"
+                        halign: "center"
+                        theme_text_color: "Custom"
+                        text_color: 0x33 / 255.0, 0x99 / 255.0, 0x66/255.0, 1
+                        font_size: "18sp"
+                MDCard:
+                    md_bg_color: 1,1,1,1
+                    size_hint: 1, None
+                    height: dp(260)
+                    radius: [24,]
+                    Image:
+                        source: "d.png"   
+                    MDLabel:
+                        text: "utegifcye eiuwfgciuyke ukyaewvfukycwe eweyufacgvkyfvac uyewiafvc wae weaifydcv weaewac waefycvawefc aewcdv"
+                        halign: "center"
+                        theme_text_color: "Custom"
+                        text_color: 0x33 / 255.0, 0x99 / 255.0, 0x66/255.0, 1
+                        font_size: "18sp"
+                MDCard:
+                    md_bg_color: 1,1,1,1
+                    size_hint: 1, None
+                    height: dp(260)
+                    radius: [24,]
+                    Image:
+                        source: "aio.png"   
+                    MDLabel:
+                        text: "utegifcye eiuwfgciuyke ukyaewvfukycwe eweyufacgvkyfvac uyewiafvc wae weaifydcv weaewac waefycvawefc aewcdv"
+                        halign: "center"
+                        theme_text_color: "Custom"
+                        text_color: 0x33 / 255.0, 0x99 / 255.0, 0x66/255.0, 1
+                        font_size: "18sp"
+        MDBoxLayout:           
+                    
